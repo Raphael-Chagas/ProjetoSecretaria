@@ -118,7 +118,7 @@ public class TelaAluno extends JFrame {
 			
 			add(painelFormulario, BorderLayout.NORTH);
 			
-			modeloTabela = new DefaultTableModel(new Object[] { "ID", "Nome", "Email", }, 0) {
+			modeloTabela = new DefaultTableModel(new Object[] { "RM","CPF Aluno", "Nome Aluno", "Telefone Aluno", "Email Aluno", "CPF Responsável", "Nome Responsável", "Telefone Responśavel", "Email Responsável" }, 0) {
 				private static final long serialVersionUID = 10L;
 				
 				public boolean isCellEditable(int row, int column) {
