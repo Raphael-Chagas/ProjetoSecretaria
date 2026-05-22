@@ -3,17 +3,17 @@ package model;
 public class Aluno {
 
 	private int rmAluno;
-	private int cpfAluno;
+	private String cpfAluno;
 	private String nomeAluno;
 	private String telefoneAluno;
 	private String emailAluno;
-	private int cpfResp;
+	private String cpfResp;
 	private String nomeResp;
 	private String telefoneResp;
 	private String emailResp;
 	
 	public Aluno() {}
-	public Aluno (int cpfAluno, String nomeAluno, String telefoneAluno, String emailAluno, int cpfResp, String nomeResp, String telefoneResp, String emailResp) {
+	public Aluno (String cpfAluno, String nomeAluno, String telefoneAluno, String emailAluno, String cpfResp, String nomeResp, String telefoneResp, String emailResp) {
 		this.cpfAluno = cpfAluno;
 		this.nomeAluno = nomeAluno;
 		this.telefoneAluno = telefoneAluno;
@@ -23,7 +23,7 @@ public class Aluno {
 		this.telefoneResp = telefoneResp;
 		this.emailResp = emailResp;
 	}
-	public Aluno (int rmAluno, int cpfAluno, String nomeAluno, String telefoneAluno, String emailAluno, int cpfResp, String nomeResp, String telefoneResp, String emailResp) {
+	public Aluno (int rmAluno, String cpfAluno, String nomeAluno, String telefoneAluno, String emailAluno, String cpfResp, String nomeResp, String telefoneResp, String emailResp) {
 		this.rmAluno = rmAluno;
 		this.cpfAluno = cpfAluno;
 		this.nomeAluno = nomeAluno;
@@ -40,10 +40,10 @@ public class Aluno {
 	public void setRmAluno(int rmAluno) {
 		this.rmAluno = rmAluno;
 	}
-	public int getCpfAluno() {
+	public String getCpfAluno() {
 		return cpfAluno;
 	}
-	public void setCpfAluno(int cpfAluno) {
+	public void setCpfAluno(String cpfAluno) {
 		this.cpfAluno = cpfAluno;
 	}
 	public String getNomeAluno() {
@@ -64,10 +64,10 @@ public class Aluno {
 	public void setEmailAluno(String emailAluno) {
 		this.emailAluno = emailAluno;
 	}
-	public int getCpfResp() {
+	public String getCpfResp() {
 		return cpfResp;
 	}
-	public void setCpfResp(int cpfResp) {
+	public void setCpfResp(String cpfResp) {
 		this.cpfResp = cpfResp;
 	}
 	public String getNomeResp() {

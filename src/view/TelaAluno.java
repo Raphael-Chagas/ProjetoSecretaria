@@ -168,9 +168,9 @@ public class TelaAluno extends JFrame {
 				controller.limpar();
 			}
 		});
-		tabelaAlunos.addMouseListener(new java.awt.event.ActionListener() {
+		tabelaAlunos.addMouseListener(new MouseAdapter() { //addMouseListener(new java.awt.event.ActionListener() {
 			public void mouseClicked(MouseEvent e) {
-				controller.preencherFormulario();
+				controller.PreencherFormulario();
 			}
 		});
 	}
