@@ -2,6 +2,7 @@ package model;
 
 public class Aluno {
 
+	private int rmAluno;
 	private int cpfAluno;
 	private String nomeAluno;
 	private String telefoneAluno;
@@ -18,6 +19,12 @@ public class Aluno {
 		this.nomeAluno = nomeAluno;
 		this.telefoneAluno = telefoneAluno;
 		this.emailAluno = emailAluno;
+	}
+	public int getRmAluno() {
+		return rmAluno;
+	}
+	public void setRmAluno(int rmAluno) {
+		this.rmAluno = rmAluno;
 	}
 	public int getCpfAluno() {
 		return cpfAluno;
@@ -43,5 +50,6 @@ public class Aluno {
 	public void setEmailAluno(String emailAluno) {
 		this.emailAluno = emailAluno;
 	}
+
 	
 }
