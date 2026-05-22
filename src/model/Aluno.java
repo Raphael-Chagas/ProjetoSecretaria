@@ -7,18 +7,32 @@ public class Aluno {
 	private String nomeAluno;
 	private String telefoneAluno;
 	private String emailAluno;
+	private int cpfResp;
+	private String nomeResp;
+	private String telefoneResp;
+	private String emailResp;
 	
 	public Aluno() {}
-	public Aluno(String nomeAluno, String telefoneAluno, String emailAluno) {
-		this.nomeAluno = nomeAluno;
-		this.telefoneAluno = telefoneAluno;
-		this.emailAluno = emailAluno;
-	}
-	public Aluno (int cpfAluno, String nomeAluno, String telefoneAluno, String emailAluno) {
+	public Aluno (int cpfAluno, String nomeAluno, String telefoneAluno, String emailAluno, int cpfResp, String nomeResp, String telefoneResp, String emailResp) {
 		this.cpfAluno = cpfAluno;
 		this.nomeAluno = nomeAluno;
 		this.telefoneAluno = telefoneAluno;
 		this.emailAluno = emailAluno;
+		this.cpfResp = cpfResp;
+		this.nomeResp = nomeResp;
+		this.telefoneResp = telefoneResp;
+		this.emailResp = emailResp;
+	}
+	public Aluno (int rmAluno, int cpfAluno, String nomeAluno, String telefoneAluno, String emailAluno, int cpfResp, String nomeResp, String telefoneResp, String emailResp) {
+		this.rmAluno = rmAluno;
+		this.cpfAluno = cpfAluno;
+		this.nomeAluno = nomeAluno;
+		this.telefoneAluno = telefoneAluno;
+		this.emailAluno = emailAluno;
+		this.cpfResp = cpfResp;
+		this.nomeResp = nomeResp;
+		this.telefoneResp = telefoneResp;
+		this.emailResp = emailResp;
 	}
 	public int getRmAluno() {
 		return rmAluno;
@@ -50,6 +64,29 @@ public class Aluno {
 	public void setEmailAluno(String emailAluno) {
 		this.emailAluno = emailAluno;
 	}
-
+	public int getCpfResp() {
+		return cpfResp;
+	}
+	public void setCpfResp(int cpfResp) {
+		this.cpfResp = cpfResp;
+	}
+	public String getNomeResp() {
+		return nomeResp;
+	}
+	public void setNomeResp(String nomeResp) {
+		this.nomeResp = nomeResp;
+	}
+	public String getTelefoneResp() {
+		return telefoneResp;
+	}
+	public void setTelefoneResp(String telefoneResp) {
+		this.telefoneResp = telefoneResp;
+	}
+	public String getEmailResp() {
+		return emailResp;
+	}
+	public void setEmailResp(String emailResp) {
+		this.emailResp = emailResp;
+	}
 	
 }
